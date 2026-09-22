@@ -1,4 +1,5 @@
-# royal<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,47 +9,71 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #d9f3ff, #e8d9ff);
+      color: #333;
       text-align: center;
-      background: linear-gradient(135deg, #e8d5ff, #d9f3ff);
-      color: #4b246b;
     }
 
-    header {
-      padding: 50px 20px 30px;
-    }
+```
+header {
+  background: linear-gradient(90deg, #168cff, #7b4dff);
+  color: white;
+  padding: 35px 20px;
+}
 
-    .logo {
-      font-size: 70px;
-    }
+.logo {
+  font-size: 60px;
+}
 
-    h1 {
-      font-size: 48px;
-      margin: 10px;
-    }
+h1 {
+  font-size: 45px;
+  margin: 10px 0;
+}
 
-    p {
-      font-size: 20px;
-    }
+header p {
+  font-size: 20px;
+}
 
-    .flowers {
-      font-size: 65px;
-      margin: 35px 0;
-    }
+nav {
+  background: white;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
 
-    .card {
-      background: white;
-      max-width: 700px;
-      margin: auto;
-      padding: 30px;
-      border-radius: 25px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
+nav a {
+  color: #5b35d5;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 12px;
+}
 
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 16px;
-    }
+.content {
+  padding: 40px 20px;
+}
+
+.flowers {
+  font-size: 55px;
+  margin: 25px 0;
+}
+
+.button {
+  display: inline-block;
+  background: #6c42e8;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 40px;
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+```
+
   </style>
 </head>
 
@@ -60,18 +85,30 @@
     <p>Discover the beautiful world of flowers</p>
   </header>
 
-  <div class="card">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="flowers.html">Flowers</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <div class="content">
     <h2>🌼 Welcome to Royal Flora 🌼</h2>
-    <p>
-      Explore colorful flowers and learn about their beauty,
-      meanings, and fascinating world.
-    </p>
 
-    <div class="flowers">
-      🌹 🌷 🌻 🌸 🌺 🪻 🌼
-    </div>
+```
+<p>
+  Explore colorful flowers and learn about their beauty,
+  meanings, and fascinating world.
+</p>
 
-    <p>✨ Nature's beauty, all in one place! ✨</p>
+<div class="flowers">
+  🌹 🌷 🌻 🌸 🌺 🪻 🌼
+</div>
+
+<p><strong>✨ Nature's beauty, all in one place! ✨</strong></p>
+
+<a class="button" href="flowers.html">Explore Flowers 🌷</a>
+```
+
   </div>
 
   <footer>
@@ -79,4 +116,4 @@
   </footer>
 
 </body>
-</html>-flora
+</html>
